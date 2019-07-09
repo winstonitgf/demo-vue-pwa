@@ -5,8 +5,9 @@
   "scripts": {
     "publish-ngh": "vue-cli-service build && ngh ",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint",
+    "publish": "cd dist && git add -A && git commit -am 'deploy' && git push -f https://github.com/winstonitgf/demo-vue-pwa.git master:gh-pages && cd .."
   },
   "dependencies": {
     "core-js": "^2.6.5",
