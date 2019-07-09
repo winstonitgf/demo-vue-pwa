@@ -1,6 +1,6 @@
 module.exports = {
-  baseUrl:
+  publicPath:
     process.env.NODE_ENV !== "production"
-      ? "https://winstonitgf.github.io/demo-vue-pwa/"
+      ? "/demo-vue-pwa/"
       : "/"
 };
